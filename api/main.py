@@ -19,9 +19,6 @@ from PyPDF2 import PdfReader
 import docx
 from PIL import Image
 
-# Vercel-specific import
-from mangum import Mangum
-
 # ----------------------------
 # Load environment variables
 # ----------------------------
@@ -337,6 +334,3 @@ Answer:"""
         return {"answer": answer, "context": context_docs}
     finally:
         db.close()
-
-# Vercel handler for serverless deployment
-handler = Mangum(app)
