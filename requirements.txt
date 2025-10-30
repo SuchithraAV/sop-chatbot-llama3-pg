@@ -12,7 +12,7 @@ python-dotenv
 pillow
 PyPDF2
 python-docx
-textract
+#textract
 pdfplumber
 pytesseract
 #mangum
